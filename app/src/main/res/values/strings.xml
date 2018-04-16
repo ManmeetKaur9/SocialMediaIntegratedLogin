@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SocialMediaIntegratedLogin</string>
+    <string name="facebook">Sign in with Facebook</string>
+    <string name="linkedin">Sign in with LinkedIn</string>
+    <string name="twitter">Sign in with Twitter</string>
+    <string name="google_plus">Sign in with Google</string>
 </resources>

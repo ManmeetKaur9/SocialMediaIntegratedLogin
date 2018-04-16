@@ -1,18 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/fb"
+        style="@style/SocialLoginButtonStyle"
+        android:layout_height="18sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:paddingLeft="70sp"
+        android:drawableStart="@drawable/facebook"
+        android:drawableLeft="@drawable/facebook"
+        android:background="@color/facebook"
+        android:onClick="performFacebookLogin"
+        android:text="@string/facebook"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/twitter"
+        style="@style/SocialLoginButtonStyle"
+        android:layout_height="18sp"
+        android:paddingLeft="70sp"
+        android:drawableStart="@drawable/imgtwitter"
+        android:drawableLeft="@drawable/imgtwitter"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:background="@color/twitter"
+        android:onClick="performTwitterLogin"
+        android:text="@string/twitter"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/gplus"
+        style="@style/SocialLoginButtonStyle"
+        android:layout_height="18sp"
+        android:paddingLeft="70sp"
+        android:drawableStart="@drawable/gplus"
+        android:drawableLeft="@drawable/gplus"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:background="@color/google_plus"
+        android:onClick="performGooglePlusLogin"
+        android:text="@string/google_plus"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/linkedin"
+        style="@style/SocialLoginButtonStyle"
+        android:layout_height="18sp"
+        android:paddingLeft="70sp"
+        android:drawableStart="@drawable/linkedin"
+        android:drawableLeft="@drawable/linkedin"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:background="@color/linkedin"
+        android:onClick="performLinkedInLogin"
+        android:text="@string/linkedin"
+        android:textAllCaps="false" />
 
 </LinearLayout>
